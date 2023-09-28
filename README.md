@@ -3,7 +3,8 @@
 A MERN-based todo app with user authentication and authorization for secure task management and user-specific access control.
 
 ## Things To Know
-Change MONGODBURI in ./server env file to your own MongoDB account.
+### If page is not responding try again in 1 minute (It is because of render coldstart)<br/>
+Change MONGODBURI in ./server env file to your own MongoDB account.<br/>
 In deployed frontend signup may respond slow for the first time because of Render service.
 
 ## DEMO ACCOUNT
