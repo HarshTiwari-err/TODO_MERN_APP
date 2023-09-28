@@ -9,6 +9,9 @@ export const createTodo = async (req, res) => {
                 message: 'todo is empty'
             })
         }
+        var dateObject = new Date(createdAt);
+        // Get the Unix timestamp in milliseconds
+        var unixTimestamp = dateObject.getTime();
         const todo = new Todo({
             title: title,
             user_id: user_id,
