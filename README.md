@@ -85,6 +85,7 @@ Start the server
 
 ## API Reference
 
+You can use TODOAPI.postman_collection.json and import into postman to run the API in postman.
 
 
 
