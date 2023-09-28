@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom'
-
+import { toaststyle } from "./ContainToast";
+import ContainToast from './ContainToast';
 const Signup = () => {
     const navigate = useNavigate()
     const [cred, setcred] = useState({
@@ -26,58 +27,20 @@ const Signup = () => {
             const response = res.data
             console.log(response)
             if (response.success) {
-                toast.success(response.message, {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                });
+                toast.success(response.message, toaststyle);
                 setTimeout(() => {
                     navigate('/login')
                 }, 1000);
             } else {
-                toast.error(response.message, {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                });
+                toast.error(response.message, toaststyle);
             }
         } catch (error) {
-            toast.error(error.message, {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-            });
+            toast.error(error.message, toaststyle);
         }
     }
     return (
         <div className="flex flex-col w-full max-w-md p-12 space-y-4 text-center bg-gray-50 text-gray-800 mx-auto my-6">
-            <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
-            />
+            <ContainToast/>
             <h1 className="text-3xl font-semibold">Sign up to your account</h1>
             <form onSubmit={handleSubmit} noValidate="" className="space-y-4 ng-untouched ng-pristine ng-valid">
                 <div className="flex flex-col space-y-5 ">
