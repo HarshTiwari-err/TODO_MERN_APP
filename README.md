@@ -2,6 +2,8 @@
 # Mern Todo App
 A MERN-based todo app with user authentication and authorization for secure task management and user-specific access control.
 
+## Requirement 
+Change MONGODBURI in ./server env file to your own MongoDD account
 
 
 
