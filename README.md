@@ -6,6 +6,9 @@ A MERN-based todo app with user authentication and authorization for secure task
 Change MONGODBURI in ./server env file to your own MongoDB account.
 In deployed frontend signup may respond slow for the first time because of Render service.
 
+## DEMO ACCOUNT
+Email Address : tiwari@gmail.com
+Password : powerpoint
 
 ## Demo
 
