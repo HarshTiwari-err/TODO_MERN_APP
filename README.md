@@ -14,10 +14,12 @@ https://github.com/HarshTiwari-err/TODO_MERN_APP/assets/129328042/383921b3-0aba-
 ## Screenshots
 
 #### Authentication Flow 
-![Auth Flow](https://blog.logrocket.com/wp-content/uploads/2019/07/jwt-auth-sequence.jpg)
+![JWTAUTH](https://github.com/HarshTiwari-err/TODO_MERN_APP/assets/129328042/0a1e16e0-45e5-479e-8e3d-da01511bb635)
+
 
 #### MiddleWare Authorization
-![Auth Middleware](https://files.codingninjas.in/article_images/middleware-in-express-1-1635765707.webp)
+![Auth Middleware](https://github.com/HarshTiwari-err/TODO_MERN_APP/assets/129328042/4b960d4c-a19a-4dff-b636-343173c3bc5d)
+
 
 #### Signup Page
 ![Sign Up](https://github.com/HarshTiwari-err/TODO_MERN_APP/assets/129328042/db78dd09-80f9-420a-bcef-5b2bfee15b31)
